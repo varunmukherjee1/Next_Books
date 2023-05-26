@@ -21,7 +21,7 @@ const ChatInput: React.FC<Props> = ({className,...props}) => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({message: "hello"})
+                body: JSON.stringify([message])
             })
 
             return res.body;
